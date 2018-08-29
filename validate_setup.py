@@ -35,4 +35,4 @@ labels = np.array(labels)
 
 clf = SVC()
 scores = cross_val_score(clf, features, labels, cv=5)
-print(f"{sum(scores) / len(scores) * 100:0.1f} percent correct!")
+print(f"{sum(scores) / len(scores) * 100:0.0f} percent correct!")
